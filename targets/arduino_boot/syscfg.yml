@@ -1,0 +1,4 @@
+### Package: targets/arduino_boot
+
+syscfg.vals:
+    BSP_ARDUINO_ZERO: "1"

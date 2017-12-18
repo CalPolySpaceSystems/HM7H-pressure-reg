@@ -1,0 +1,4 @@
+### Package: targets/blinky
+
+syscfg.vals:
+    BSP_ARDUINO_ZERO: "1"
