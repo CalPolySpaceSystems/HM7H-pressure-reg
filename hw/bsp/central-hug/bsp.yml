@@ -23,7 +23,7 @@ bsp.linkerscript:
     - "hw/bsp/central-hug/central-hug.ld"
     - "hw/mcu/atmel/samd21xx/samd21xx.ld"
 bsp.linkerscript.BOOT_LOADER.OVERWRITE:
-    - "hw/bsp/central-hug/central-hug_boot.ld"
+    - "hw/bsp/central-hug/central-hug-boot.ld"
     - "hw/mcu/atmel/samd21xx/samd21xx.ld"
 bsp.downloadscript: "hw/bsp/central-hug/central-hug_download.sh"
 #bsp.debugscript: "hw/bsp/central-hug/central-hug_debug.sh"
