@@ -1,4 +1,4 @@
-### Target: targets/press-reg
+### Target: targets/press_reg
 target.app: "apps/press_reg"
-target.bsp: "hw/bsp/central-hug"
+target.bsp: "hw/bsp/central_hug"
 target.build_profile: "optimized"

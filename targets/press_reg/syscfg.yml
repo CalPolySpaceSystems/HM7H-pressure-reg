@@ -1,4 +1,4 @@
-### Package: targets/press-reg
+### Package: targets/press_reg
 
 syscfg.vals:
     BSP_ARDUINO_ZERO: "1"

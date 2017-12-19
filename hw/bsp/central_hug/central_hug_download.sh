@@ -30,7 +30,7 @@
 
 . $CORE_PATH/hw/scripts/openocd.sh
 
-CFG="-f $BSP_PATH/central-hug.cfg"
+CFG="-f $BSP_PATH/central_hug.cfg"
 
 PROTECT_BOOT=0
 if [ "$MFG_IMAGE" ]; then
