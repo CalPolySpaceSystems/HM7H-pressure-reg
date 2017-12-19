@@ -54,8 +54,10 @@ int main(int argc, char **argv)
     sysinit();
 
     g_led_pin = LED_BLINK_PIN;
-    hal_gpio_init_out(g_led_pin, 1);
+	ls_pin = LS_PIN;
 
+    hal_gpio_init_out(g_led_pin, 1);
+	hal_gpio_init_out(ls_pin, 1);
     while (1) {
         ++g_task1_loops;
 
