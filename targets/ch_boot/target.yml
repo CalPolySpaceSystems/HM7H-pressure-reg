@@ -1,4 +1,4 @@
 ### Target: targets/ch_boot
 target.app: "@apache-mynewt-core/apps/boot"
-target.bsp: "hw/bsp/arduino_zero"
+target.bsp: "hw/bsp/central-hug"
 target.build_profile: "optimized"
