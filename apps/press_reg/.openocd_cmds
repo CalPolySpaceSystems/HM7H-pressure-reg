@@ -1,0 +1,5 @@
+
+init
+reset halt
+
+flash write_image erase /home/pchizek/dev/HM7H-pressure-reg/bin/targets/press-reg/app/apps/press_reg/press_reg.img 0xc000

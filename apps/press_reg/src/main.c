@@ -31,8 +31,8 @@
 static volatile int g_task1_loops;
 
 /* For LED toggling */
-int g_led_pin;
-int ls_pin;
+//int g_led_pin;
+//int ls_pin;
 
 /**
  * main
@@ -53,11 +53,9 @@ int main(int argc, char **argv)
 
     sysinit();
 
-    g_led_pin = LED_BLINK_PIN;
-    ls_pin = LS_PIN;
+    //g_led_pin = LED_PIN;
+    hal_gpio_init_out(LS_PIN, 1);
 
-    //hal_gpio_init_out(g_led_pin, 1);
-    hal_gpio_init_out(ls_pin, 1);
     while (1) {
         ++g_task1_loops;
 
@@ -66,7 +64,7 @@ int main(int argc, char **argv)
 
         /* Toggle the LED */
         //hal_gpio_toggle(g_led_pin);
-	hal_gpio_toggle(LS_PIN);
+		hal_gpio_toggle(LS_PIN);
 
     }
     assert(0);
