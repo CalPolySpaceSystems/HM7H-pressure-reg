@@ -25,7 +25,7 @@ bsp.linkerscript:
 bsp.linkerscript.BOOT_LOADER.OVERWRITE:
     - "hw/bsp/central-hug/central-hug-boot.ld"
     - "hw/mcu/atmel/samd21xx/samd21xx.ld"
-bsp.downloadscript: "hw/bsp/central-hug/central-hug-download.sh"
+bsp.downloadscript: "hw/bsp/arduino_zero/arduino_zero_download.sh"
 #bsp.debugscript: "hw/bsp/central-hug/central-hug-debug.sh"
 bsp.downloadscript.WINDOWS.OVERWRITE: "hw/bsp/central-hug/central-hug-download.cmd"
 #bsp.debugscript.WINDOWS.OVERWRITE: "hw/bsp/central-hug/central-hug-debug.cmd"
