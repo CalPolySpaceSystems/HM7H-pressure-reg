@@ -1,5 +1,0 @@
-
-init
-reset halt
-at91samd bootloader 0
-flash write_image erase /home/pchizek/dev/press-reg/bin/targets/arduino_boot/app/apps/boot/boot.elf.bin 0x0

@@ -1,9 +1,0 @@
-arm-none-eabi-ar
-rcs
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/sys_console_full.a
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/ble_monitor_console.o
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/console.o
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/console_fmt.o
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/rtt_console.o
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/ticks.o
-/home/pchizek/dev/press-reg/bin/targets/blinky/app/sys/console/full/repos/apache-mynewt-core/sys/console/full/src/uart_console.o
