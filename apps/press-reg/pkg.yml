@@ -17,7 +17,7 @@
 # under the License.
 #
 
-pkg.name: apps/pressure-reg
+pkg.name: apps/press-reg
 pkg.type: app
 pkg.description: Pressure regulating control loop for CPSS HM7H
 pkg.author: "pchizek@github.com'
