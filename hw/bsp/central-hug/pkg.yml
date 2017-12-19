@@ -16,9 +16,9 @@
 # specific language governing permissions and limitations
 # under the License.
 #
-pkg.name: "hw/bsp/arduino_zero"
+pkg.name: "hw/bsp/central-hug"
 pkg.type: bsp
-pkg.repository: https://github.com/runtimeinc/mynewt_arduino_zero
+#pkg.repository: https://github.com/runtimeinc/mynewt_arduino_zero
 
 pkg.deps:
     - "@mynewt_arduino_zero/hw/mcu/atmel/samd21xx"
