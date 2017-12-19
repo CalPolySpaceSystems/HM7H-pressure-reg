@@ -32,6 +32,7 @@ static volatile int g_task1_loops;
 
 /* For LED toggling */
 int g_led_pin;
+int ls_pin;
 
 /**
  * main
@@ -41,8 +42,8 @@ int g_led_pin;
  *
  * @return int NOTE: this function should never return!
  */
-int
-main(int argc, char **argv)
+
+int main(int argc, char **argv)
 {
     int rc;
 
@@ -63,6 +64,8 @@ main(int argc, char **argv)
 
         /* Toggle the LED */
         hal_gpio_toggle(g_led_pin);
+		hal_gpio_toggle(ls_pin);
+
     }
     assert(0);
 
