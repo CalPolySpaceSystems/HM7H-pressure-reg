@@ -1,0 +1,31 @@
+# Package: "hw/bsp/central-hug"
+
+syscfg.defs:
+    BSP_CENTRAL_HUG:
+        description: 'Building for custom hardware "Central Hug"'
+        value: 0
+
+    UART_0:
+        description: 'Whether to enable UART0'
+        value: 1
+
+    TIMER_0:
+        description: 'Arduino zero Timer 0.'
+        value:  1
+    TIMER_1:
+        description: 'Arduino zero Timer 1.'
+        value:  0
+    TIMER_2:
+        description: 'Arduino zero Timer 2.'
+        value:  0
+
+syscfg.vals:
+    CONFIG_FCB_FLASH_AREA: FLASH_AREA_NFFS
+    REBOOT_LOG_FLASH_AREA: FLASH_AREA_REBOOT_LOG
+    NFFS_FLASH_AREA: FLASH_AREA_NFFS
+    COREDUMP_FLASH_AREA: FLASH_AREA_IMAGE_1
+
+    # Console history happens at interrupts and arduino is not fast
+    # enough to do this and to perform simultaneous transmit and
+    # receive at 115200 for large frames.  Disable history by default
+    CONSOLE_HIST_ENABLE: 0

@@ -1,5 +1,0 @@
-
-init
-reset halt
-at91samd bootloader 0
-flash write_image erase /home/pchizek/dev/HM7H-pressure-reg/bin/targets/ch_boot/app/apps/boot/boot.elf.bin 0x0
