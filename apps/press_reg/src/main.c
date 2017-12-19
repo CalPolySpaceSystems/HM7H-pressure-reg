@@ -23,28 +23,45 @@
 #include "sysinit/sysinit.h"
 #include "os/os.h"
 #include "bsp/bsp.h"
+
+/* Hardare abstraction layer*/
 #include "hal/hal_gpio.h"
+#include "hal/hal_adc.h"
+
 #ifdef ARCH_sim
 #include "mcu/mcu_sim.h"
 #endif
 
 static volatile int g_task1_loops;
 
-/* For LED toggling */
-//int g_led_pin;
-//int ls_pin;
+/* Declare Tasks */
+static void get_input(struct os_event *);
+static void close_valve(struct os_event *);
 
-/**
- * main
- *
- * The main task for the project. This function initializes packages,
- * and then blinks the BSP LED in a loop.
- *
- * @return int NOTE: this function should never return!
- */
+/* Struct of scheduled events */
+static struct os_event gen_task_ev = {
+	.get_input = get_input,
+	.close_valve = close_valve,
+};
 
-int main(int argc, char **argv)
-{
+/* Intitialize Tasks */
+static void init_tasks(void) {
+	os_task_init();
+}
+
+/* Task to read input and open the valve */
+static void get_input(struct os_event *ev) {
+
+}
+
+/* Task to close the valve after a certain time */
+static void close_valve(struct os_event *ev) {
+
+}
+
+/* Run diagnostics and initialize task handler in main */
+
+int main(int argc, char **argv){
     int rc;
 
 #ifdef ARCH_sim
@@ -52,6 +69,8 @@ int main(int argc, char **argv)
 #endif
 
     sysinit();
+
+	init_tasks();
 
     //g_led_pin = LED_PIN;
     hal_gpio_init_out(LS_PIN, 1);
@@ -71,4 +90,3 @@ int main(int argc, char **argv)
 
     return rc;
 }
-
