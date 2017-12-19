@@ -1,5 +1,5 @@
 ### Package: targets/press-reg
-pkg.name: "targets/press-reg"
+pkg.name: "targets/blinky"
 pkg.type: "target"
 pkg.description: 
 pkg.author: 
