@@ -52,7 +52,7 @@ main(int argc, char **argv)
 
     sysinit();
 
-    g_led_pin = LED_BLINK_PIN;
+    g_led_pin = LED_PIN;
     hal_gpio_init_out(g_led_pin, 1);
 
     while (1) {

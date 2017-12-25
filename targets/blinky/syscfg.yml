@@ -1,4 +1,4 @@
 ### Package: targets/blinky
 
 syscfg.vals:
-    BSP_ARDUINO_ZERO: "1"
+    BSP_CENTRAL_HUG: "1"
